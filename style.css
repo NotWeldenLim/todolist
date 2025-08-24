@@ -118,3 +118,31 @@
     transform: translateY(-5px); /* Move the icons up slightly on hover */
   }
   
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+.delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ff4747; /* Red color for the trash icon */
+  font-size: 18px;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.delete:hover {
+  color: #e60000; /* Darker red on hover */
+}
+
+#taskname {
+  flex-grow: 1;
+  font-size: 16px;
+}
