@@ -1,0 +1,120 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        hwb(302 27% 0%),
+        #a30cc1,
+        #35126a
+    );
+  }
+  .container {
+    width: 90%;
+    max-width: 34em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  #new-task {
+    position: relative;
+    background-color: hsl(303, 100%, 72%);
+    padding: 1.8em 1.25em;
+    border-radius: 0.3em;
+    box-shadow: 0 1.25em 1.8em #ae23eab8;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+  }
+  #new-task input {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    border: none;
+    border-bottom: 2px solid hsl(283, 96%, 73%);
+    padding: 0.8em 0.5em;
+    color: #111111;
+    font-weight: 500;
+  }
+  #new-task input:focus {
+    outline: none;
+    border-color: hsl(295, 100%, 73%);
+  }
+  #new-task button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    background-color: hwb(295 27% 5% / 0.799);
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+  }
+  #tasks {
+    background-color: hsl(297, 100%, 77%);
+    position: relative;
+    padding: 1.8em 1.25em;
+    margin-top: 3.8em;
+    width: 100%;
+    box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+    border-radius: 0.6em;
+  }
+  .task {
+    background-color: hsl(301, 100%, 74%);
+    padding: 0.3em 0.6em;
+    margin-top: 0.6em;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #fd83e8;
+    cursor: pointer;
+  }
+  .task span {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+  }
+  .task button {
+    color: hsl(309, 98%, 64%);
+    padding: 0.8em 0;
+    width: 3.0em;
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .delete {
+    background-color: hwb(299 7% 2%);
+  }
+  .edit {
+    background-color:hwb(299 7% 2%) ;
+    margin-left: auto;
+  }
+  .completed {
+    text-decoration: line-through;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px; /* Adjust the gap between social icons */
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    z-index: 4;
+    left: 46.5%;
+  }
+  
+  .social-icons img {
+    width: 40px; /* Adjust the size of the icons */
+    height: 40px;
+    transition: transform 0.2s ease; /* Add a smooth transition on hover */
+  }
+  
+  .social-icons img:hover {
+    transform: translateY(-5px); /* Move the icons up slightly on hover */
+  }
+  
